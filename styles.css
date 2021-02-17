@@ -5,17 +5,40 @@ body {
   font-size: 20px;
 }
 
+
+@media all and (max-width: 980px) {
+ 
+ header{
+  
+  width: 100%;
+
+
+  }
+
+  .abc{
+    width:10px;
+  }
+
+}
+
+h2{
+  color:#e76f51;
+}
+
 .heading {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: xx-large;
+  /* color: #e76f51; */
+  /* display:flex;
+  text-align: center; */
 }
 
 .abc {
   background-color: white;
-  color: purple;
-  /* padding: 12px 20px; */
-  /* margin: 60px 16px 80px 50px;  */
-  margin-top: 10px;
+  color: #e76f51;
+  padding: 12px 20px;
+  /* margin: auto;  */
+  margin: 20px auto;  
   width: 250px;
   height: 35px;
   border-color: white;
@@ -23,76 +46,110 @@ body {
   font-size: 16px;
 }
 
+/* .buttondiv
+{
+  padding: 30px 20px 20px 450px;
+  
+  margin: 0 auto;
+} */
+
 .header {
   background-image: url('https://images.unsplash.com/photo-1484584343816-b22e89904ab2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80');
   background-size: cover;
   background-repeat: no-repeat;
+
   padding-top: 28px;
   color: white;
-}
-
-
-
-@media all and (max-width: 980px) {
-
-  header {
-   width: 100%;
-   }
-   body{
-     width: 100%;
-   }
-
-   .abc {
-    /* padding: 0; */
-    margin: 0;
-    width: 85%;
-    /* height: 30%; */
-  } 
-  .button {
-    border-radius: 4px;
-    background-color: rebeccapurple;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-     /* padding: 20px; */
-    width: 200px; 
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-   .op {
-    margin: 0;
-    width: 85%;
-   }
-}
-
- 
-.body2
-{
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #264653;
-  display: flex;
-  align-items: center;
-  width: 350px;
-  height:250px;
-  margin: 20px auto;  
-  
 }
 
 .placeholder {
   color: gray;
 }
 
+.body-flex
+{
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+   flex-direction: column;
+  justify-content: space-between;
+   align-items: center;
+  background-color: #264653;
+  width: 350px;
+  height:250px;
+  margin: 20px auto;  
+  
+}
+
 .logic {
-  background-color: rgb(20, 192, 141);
+   background-color: #2a9d8f; 
   min-height: 500px;
+  display: flex;
+  align-items: center;
+
+}
+
+.flex-reg
+{
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+   flex-direction: column;
+  justify-content: space-between;
+   align-items: center;
+  /* flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  /* justify-content: space-around; */ 
+}
+
+.flex-head
+{
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  align-items: center;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+
+
+.flex-btn
+{
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  align-items: center;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
 }
 
 .footer-para {
-  color: purple;
+  color:purple;
   margin: auto;
   text-align: center;
 }
@@ -117,19 +174,6 @@ body {
   z-index: -1;
 } */
 
-.op {
-  background-color: white;
-  color:purple;
-  /* padding: 12px 20px;
-  margin: 60px 16px 80px 20px; */
-  margin-bottom: 10px;
-  width: 250px;
-  height: 35px;
-  border-color: white;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
 .button {
   border-radius: 4px;
   background-color: #f4511e;
@@ -137,12 +181,15 @@ body {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
+  font-style: bold;
   /* padding: 20px; */
-  
+  margin: 0 auto;  
   width: 250px;
+  height: 35px;
+  /* width: 200px; */
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .button span {
@@ -169,9 +216,31 @@ body {
   opacity: 1;
   right: 0;
 }
-/* 
+#color {
+  min-height: 40px; 
+  border: 1px solid black; 
+  background-color:#000000; 
+  width: 40px;
+}
+
+
+.op {
+  background-color: white;
+  color:purple;
+  /* padding: 3px 3px 3x 200px;
+  margin: 60px 16px 8px 20px; */
+  padding: 12px 20px;
+  /* margin: auto;  */
+  margin: 20px auto;  
+  width: 250px;
+  height: 35px;
+  border-color: white; 
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
 .button {
-  
+  /* it starts here       */
   background-color: #aa1d2f;
   color: wheat;
   padding: 6px 6px;
@@ -180,10 +249,10 @@ body {
   text-align: center;
   border: 1px solid black;
   font-size: 20px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: 14px;
   margin-bottom: 18px;
-} */
+}
 
 a {
   text-decoration: none;
