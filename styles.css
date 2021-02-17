@@ -13,10 +13,11 @@ body {
 .abc {
   background-color: white;
   color: purple;
-  padding: 12px 20px;
-  margin: 60px 16px 80px 50px;
-  width: 550px;
-  height: 250px;
+  /* padding: 12px 20px; */
+  /* margin: 60px 16px 80px 50px;  */
+  margin-top: 10px;
+  width: 250px;
+  height: 35px;
   border-color: white;
   box-sizing: border-box;
   font-size: 16px;
@@ -28,6 +29,57 @@ body {
   background-repeat: no-repeat;
   padding-top: 28px;
   color: white;
+}
+
+
+
+@media all and (max-width: 980px) {
+
+  header {
+   width: 100%;
+   }
+   body{
+     width: 100%;
+   }
+
+   .abc {
+    /* padding: 0; */
+    margin: 0;
+    width: 85%;
+    /* height: 30%; */
+  } 
+  .button {
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+     /* padding: 20px; */
+    width: 200px; 
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+   .op {
+    margin: 0;
+    width: 85%;
+   }
+}
+
+ 
+.body2
+{
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #264653;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height:250px;
+  margin: 20px auto;  
+  
 }
 
 .placeholder {
@@ -53,7 +105,7 @@ body {
   height: 100px;
 }
 
-.abc::after {
+/* .abc::after {
   background-color: grey;
   content: '';
   display: block;
@@ -63,15 +115,16 @@ body {
   right: 10px;
   bottom: 10px;
   z-index: -1;
-}
+} */
 
 .op {
   background-color: white;
   color:purple;
-  padding: 12px 20px;
-  margin: 60px 16px 80px 20px;
-  width: 550px;
-  height: 250px;
+  /* padding: 12px 20px;
+  margin: 60px 16px 80px 20px; */
+  margin-bottom: 10px;
+  width: 250px;
+  height: 35px;
   border-color: white;
   box-sizing: border-box;
   font-size: 16px;
@@ -84,9 +137,9 @@ body {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
+  /* padding: 20px; */
   
-  width: 200px;
+  width: 250px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -116,9 +169,9 @@ body {
   opacity: 1;
   right: 0;
 }
-
+/* 
 .button {
-  /* it starts here       */
+  
   background-color: #aa1d2f;
   color: wheat;
   padding: 6px 6px;
@@ -130,7 +183,7 @@ body {
   margin-left: 30px;
   margin-top: 14px;
   margin-bottom: 18px;
-}
+} */
 
 a {
   text-decoration: none;
